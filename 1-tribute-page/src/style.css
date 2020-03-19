@@ -1,0 +1,47 @@
+html {
+  font-size: 20px;
+}
+.centered-text {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+#main {
+  font-family: 'IBM Plex Sans', Verdana;
+  min-height: 300px;
+  box-sizing: border-box;
+  background: fcfcfc;
+  display: flex;
+  flex-direction: column;
+}
+#title {
+  font-size: 2.5em;
+}
+#img-div {
+  background: #f7f7f7;
+  border-radius: 15px;
+  line-height: 2;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#img-caption {
+  padding: 1vw 0;
+}
+#tribute-info {
+  width: 98%;
+  max-width: 10in;
+  margin: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+#tribute-timeline li {
+  margin: 1em 0;
+}
+#quotes {
+  font-style: italic;
+}
