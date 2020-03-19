@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+</head>
+<body>
+<div class="ibm-sans-font" id="page">
+  <header class="box centered-text bold">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please complete the form below.</p>
+  </header>
+  <main class="box bold" id="content">
+    <form id="survey-form" onsubmit="this.reset(); alert('Thank you for your feedback!'); return false;">
+      <p>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </p>
+      <p>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </p>
+      <p>
+        <label id="number-label" for="number">Number</label>
+        <input type="number" name="number" id="number" placeholder="Enter a number from 1-99" min="1" max="99">
+      </p>
+      <p>
+        <label id="dropdown-label" for="dropdown">Gender</label>
+        <select name="Gender" id="dropdown">
+          <option hidden disabled selected value>-- Select a gender --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Prefer not to say</option>
+        </select>
+      </p>
+      <p>
+        Would you recommend my services?<br />
+        <input type="radio" name="recommend" id="yes" value="yes">
+        <label for="yes" id="yes-label">Yes</label><br />
+        <input type="radio" name="recommend" id="no" value="no">
+        <label for="no" id="no-label">No</label><br />
+        <input type="radio" name="recommend" id="unsure" value="unsure">
+        <label for="unsure" id="unsure-label">Unsure</label>
+      </p>
+      <p>
+        What activity would you suggest?<br />
+        <input type="checkbox" name="activity" id="walk" value="walk">
+        <label for="walk" id="walk-label">Walk</label><br />
+        <input type="checkbox" name="activity" id="swim" value="swim">
+        <label for="swim" id="swim-label">Swim</label><br />
+        <input type="checkbox" name="activity" id="run" value="run">
+        <label for="run" id="run-label">Run</label><br />
+        <input type="checkbox" name="activity" id="cycle" value="cycle">
+        <label for="cycle" id="cycle-label">Cycle</label><br />
+        <input type="checkbox" name="activity" id="drive" value="drive">
+        <label for="drive" id="drive-label">Drive</label>
+      </p>
+      <p>
+        <label for="comments" id="comment-label">Any comments or suggestions?</label><br />
+        <textarea name="comments" id="comments" placeholder="Enter comments here"></textarea>
+      </p>
+      <input type="submit" name="submit" id="submit">
+    </form>
+  </main>
+  <footer class="box centered-text bold">
+    <p>Thank you for your feedback!</p>
+  </footer>
+</div>
+</body>
+</html>

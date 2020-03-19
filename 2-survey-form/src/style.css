@@ -1,0 +1,69 @@
+html {
+  font-size: 20px;
+}
+body {
+  background-image: url('https://piouson.github.io/responsive-web-design/2-survey-form/portugal.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  background-color: rgba(255,255,255,0.4);
+  background-blend-mode: lighten;
+}
+.box {
+  padding: 1vw 2vw;
+}
+.centered-text {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.ibm-sans-font {
+  font-family: 'IBM Plex Sans', Verdana;
+}
+#page {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1em;
+}
+#title {
+  font-size: 2em;
+}
+#content {
+  background-color: rgba(194,178,233,0.8);
+  line-height: 2;
+}
+#name, #email, #number, #dropdown, #submit, #comments {
+  height: 2.5em;
+  width: 100%;
+  padding-left: 1%;
+  font-size: 1em;
+  border: 3px solid #4D4EB2;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+[type=radio],[type=checkbox] {
+  transform: scale(1.5);
+}
+#comments {
+  height: 8em;
+  resize: vertical;
+}
+#submit {
+  background-image: radial-gradient(#FFFFFF,#9871C1);
+}
+:focus {
+  border: 5px solid #4D4EB2 !important;
+}
+@media only screen and (min-width: 800px) {
+  #page {
+    max-width: 800px;
+  }
+  #title {
+    font-size: 2.5em;
+  }
+}
