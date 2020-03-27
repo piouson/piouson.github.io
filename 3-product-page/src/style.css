@@ -1,0 +1,238 @@
+:root {
+  --main-focus-color: deepskyblue;
+  --main-hover-color: lightskyblue;
+  --main-base-color: lightblue;
+  --main-content-width: 58em;
+  --tablet-content-width: 90%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+#page {
+  font: 1.1em 'IBM Plex Sans', Verdana;
+  margin-top: 7em;
+}
+.material-icons.md-0 {
+  font-size: 72px; 
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-base-color);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+#header-img {
+  padding: 20px;
+}
+#nav-bar {
+  display: flex;
+}
+#nav-bar .nav-link {
+  color: black;
+  height: 100%;
+  padding: 30px 2vw;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+#nav-bar .nav-link:hover {
+  background-color: var(--main-focus-color);
+  font-weight: bold;
+}
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
+}
+.menu-icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+#main {
+  margin: auto;
+  padding: 0 2em;
+  max-width: var(--main-content-width);
+  box-sizing: border-box;
+}
+#main > * {
+  margin-bottom: 3em;
+}
+.button {
+  background-color: var(--main-hover-color);
+  border: none;
+  padding: 0.6em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+#subscribe {
+  text-align: center;
+}
+#subscribe #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subscribe #form #email {
+  width: 18em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  border: 1px solid black;
+}
+#subscribe #form #email:focus {
+  box-shadow: 2px 2px 5px 5px rgba(135,206,250,0.4);
+  border: 2px solid black;
+}
+#subscribe #form #submit {
+  width: 8em;
+  padding: 0.5em;
+}
+#about article {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+#about article span {
+  margin-right: 0.5em;
+}
+#about article div h2 {
+  line-height: 0.2em;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em 0;
+  height: 20em;
+  width: 15em;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.card-header, .card-footer {
+  background-color: rgba(135,206,250,0.4);
+}
+.product-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(135,206,250,0.8);
+  transition: 0.3s;
+}
+.product-price {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.card-button {
+  width: 100%;
+}
+.button:hover {
+  background-color: var(--main-focus-color);
+  transition: 0.3s;
+  font-weight: bold;
+}
+#snapshot {
+  max-width: 512px;
+  min-width: 256px;
+  margin: 20px auto;
+}
+#video {
+  width: 100%;
+  height: 288px;
+  border: none;
+}
+#footer {
+  background-color: rgba(173,216,230,0.6);
+  margin-top: 100px;
+  padding: 10px 20px;
+}
+#footer-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+#footer-nav .foot-link {
+  color: black;
+  height: 100%;
+  padding: 20px 1vw 10px;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#footer-nav .foot-link:hover {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media screen and (max-width: 1060px) {
+  .material-icons.md-0 {
+    font-size: 48px;
+  }
+  #main {
+    width: var(--tablet-content-width);
+    min-width: 40em;
+  }
+  .col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .material-icons.md-0 {
+    font-size: 36px;
+  }
+  #header {
+    flex-direction: column;
+    padding: 0;
+  }
+  #header-img {
+    align-self: center;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #header:hover #nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  #header:hover .menu-icon {
+    transform: rotate(-90deg);
+    transition: 0.3s;
+  }
+  #nav-bar .nav-link {
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  #main {
+    min-width: 20em;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #about {
+    text-align: center;
+  }
+  #about article {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+}
