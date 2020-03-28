@@ -2,13 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <div id="page">
 
+    <nav id="navbar">
+      <header id="nav-header"><span>Powershell</span></header>
+      <div id="nav-links">
+        <a class="nav-link" href="#Section_One">Section One</a>
+        <a class="nav-link" href="#Section_Two">Section Two</a>
+        <a class="nav-link" href="#Section_Three">Section Three</a>
+        <a class="nav-link" href="#Section_Four">Section Four</a>
+        <a class="nav-link" href="#Section_Five">Section Five</a>
+      </div>
+      <div class="menu-icon">
+        <div class="menu-icon-bar menu-bar1"></div>
+        <div class="menu-icon-bar menu-bar2"></div>
+        <div class="menu-icon-bar menu-bar3"></div>
+      </div>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Section_One">
+        <header>Section One</header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <pre><code>$uri = "https://github.com/piouson"
+Invoke-RestMethod -Uri $uri -Method GET</code></pre>
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Section_Two">
+        <header>Section Two</header>
+        <p></p>
+        <p></p>
+        <code></code>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Section_Three">
+        <header>Section Three</header>
+        <p></p>
+        <p></p>
+        <code></code>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Section_Four">
+        <header>Section Four</header>
+        <p></p>
+        <p></p>
+        <code></code>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Section_Five">
+        <header>Section Five</header>
+        <p></p>
+        <p></p>
+        <code></code>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+  </div>
 </body>
 
 </html>

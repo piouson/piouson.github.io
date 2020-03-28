@@ -1,0 +1,126 @@
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font: 1em 'IBM Plex Sans', Verdana;
+}
+
+header {
+  font-size: 1.6em;
+}
+
+pre {
+  background-color: #EFF0F2;
+  font: 12px monospace;
+  max-width: 90%;
+  padding: 1em;
+  margin: 2em 0;
+  overflow: auto;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 15em;
+  padding-top: 1em;
+  box-sizing: border-box;
+  border-right: 4px solid grey;
+}
+
+#nav-header {
+  padding-left: 30px;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-bottom: 1px solid black;
+  float: left;
+}
+
+.nav-link:first-child {
+  border-top: 1px solid black;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
+}
+
+.menu-icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+#main-doc {
+  max-width: 100%;
+  padding: 40px 30px;
+  margin-left: 15em;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 849px) {
+  #navbar header {
+    text-align: center;
+  }
+  #navbar {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    border-right: none;
+  }
+  #navbar span {
+    display: none;
+  }
+  #navbar header:after {
+    content: "Powershell Documentation";
+  }
+  #navbar:hover #nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar:hover .menu-icon {
+    transform: rotate(-90deg);
+    transition: 0.3s;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #nav-header {
+    padding-left: 0;
+  }
+  .nav-link:first-child {
+    border-top: none;
+  }
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  #nav-links {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: auto;
+    white-space: nowrap;
+    height: 10em;
+    display: none;
+    text-align: center;
+  }
+  #main-doc {
+    min-width: 20em;
+    margin-left: 0;
+  }
+}
