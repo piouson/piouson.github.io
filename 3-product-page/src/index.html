@@ -1,144 +1,150 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=IBM Plex Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<div id="page">
-  <header id="header">
-    <img id="header-img" src="https://piouson.github.io/responsive-web-design/3-product-page/pl-icon_200x200.png" alt="product logo">
-    <nav id="nav-bar">
-      <a class="nav-link" href="#subscribe">Subscribe</a>
-      <a class="nav-link" href="#to-about">About</a>
-      <a class="nav-link" href="#to-products">Products</a>
-      <a class="nav-link" href="#video">Contact</a>
-    </nav>
-    <div class="menu-icon">
-      <div class="menu-icon-bar menu-bar1"></div>
-      <div class="menu-icon-bar menu-bar2"></div>
-      <div class="menu-icon-bar menu-bar3"></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piouson - Product Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM Plex Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <div id="page">
+        <header id="header">
+            <img id="header-img" src="https://piouson.github.io/responsive-web-design/3-product-page/pl-icon_200x200.png" alt="product logo">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#top">Subscribe</a>
+                <a class="nav-link" href="#to-about">About</a>
+                <a class="nav-link" href="#to-products">Products</a>
+                <a class="nav-link" href="#video">Contact</a>
+            </nav>
+            <div class="menu-icon">
+                <div class="menu-icon-bar menu-bar1"></div>
+                <div class="menu-icon-bar menu-bar2"></div>
+                <div class="menu-icon-bar menu-bar3"></div>
+            </div>
+        </header>
+        <main id="main">
+            <section id="subscribe">
+                <h2>My Product Page Masterpiece</h2>
+                <form id="form" action="https://github.com/piouson/responsive-web-design">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <a id="to-about"></a>
+                    <input type="submit" name="submit" id="submit" class="button" value="Subscribe">
+                </form>
+            </section>
+            <section id="about">
+                <article>
+                    <div class="article-icon">
+                        <span class="material-icons md-0">loyalty</span>
+                    </div>
+                    <div>
+                        <h2>Customer Loyalty</h2>
+                        <p>Trust is a two-way relationship. This is why we have a no nonsense policy when it comes to our valued customers. All orders are 100% money-back guarantee.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-icon">
+                        <span class="material-icons md-0">local_shipping</span>
+                    </div>
+                    <div>
+                        <h2>Worldwide Shipping</h2>
+                        <p>We operate a 14-day maximum delivery time for overseas countries. So you can buy with confidence anytime anywhere. </p>
+                    </div>
+                </article>
+                <article class="flex-row">
+                    <div class="article-icon">
+                        <span class="material-icons md-0">speed</span>
+                    </div>
+                    <div>
+                        <h2>Superfast Delivery</h2>
+                        <p>From up to a 3-day delivery time on nationwide orders to a 14-day maximum time for overseas countries, even if you're in the mountains.</p>
+                    </div>
+                    <a id="to-products"></a>
+                </article>
+            </section>
+            <section id="products">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <h4 class="product-title">PRODUCT TITLE 1</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Product Description</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum.</p>
+                                <p class="product-price">£500</p>
+                            </div>
+                            <div class="card-footer">
+                                <input type="button" class="button card-button" value="CHOOSE">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <h4 class="product-title">PRODUCT TITLE 2</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Product Description</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum.</p>
+                                <p class="product-price">£200</p>
+                            </div>
+                            <div class="card-footer">
+                                <input type="button" class="button card-button" value="CHOOSE">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <h4 class="product-title">PRODUCT TITLE 3</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Product Description</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum.</p>
+                                <p class="product-price">£400</p>
+                            </div>
+                            <div class="card-footer">
+                                <input type="button" class="button card-button" value="CHOOSE">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <div class="card-header">
+                                <h4 class="product-title">PRODUCT TITLE 4</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Product Description</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum.</p>
+                                <p class="product-price">£700</p>
+                            </div>
+                            <div class="card-footer">
+                                <input type="button" class="button card-button" value="CHOOSE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="snapshot">
+                <iframe id="video" width="512px" height="288px" src="https://www.youtube.com/embed/YHN-3VhUFZc?version=3&loop=1&playlist=YHN-3VhUFZc&controls=0" allowfullscreen></iframe>
+            </section>
+        </main>
+        <footer id="footer">
+            <nav id="footer-nav">
+                <a class="foot-link" href="#top">Privacy</a>
+                <a class="foot-link" href="#to-about">Terms</a>
+                <a class="foot-link" href="#to-products">FAQs</a>
+            </nav>
+        </footer>
     </div>
-  </header>
-  <main id="main">
-    <section id="subscribe">
-      <h2>My Product Page Masterpiece</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
-      <a id="to-about"></a>
-      <input type="submit" name="submit" id="submit" class="button" value="Subscribe">
-      </form>
-    </section>
-    <section id="about">
-      <article>
-        <div class="article-icon">
-          <span class="material-icons md-0">
-            loyalty
-          </span>
-        </div>
-        <div>
-          <h2>Customer Loyalty</h2>
-          <p>Trust is a two-way relationship. This is why we have a no nonsense policy when it comes to our valued customers. All orders are 100% money-back guarantee.</p>
-        </div>
-      </article>
-      <article>
-        <div class="article-icon">
-          <span class="material-icons md-0">
-            local_shipping
-          </span>
-        </div>
-        <div>
-          <h2>Worldwide Shipping</h2>
-          <p>We operate a 14-day maximum delivery time for overseas countries. So you can buy with confidence anytime anywhere. </p>
-        </div>
-      </article>
-      <article class="flex-row">
-        <div class="article-icon">
-          <span class="material-icons md-0">
-            speed
-          </span>
-        </div>
-        <div>
-          <h2>Superfast Delivery</h2>
-          <p>From up to a 3-day delivery time on nationwide orders to a 14-day maximum time for overseas countries, even if you're in the mountains.</p>
-        </div>
-        <a id="to-products"></a>
-      </article>
-    </section>
-    <section id="products">
-      <div class="row">
-        <div class="col">
-          <div class="product-card">
-          <div class="card-header">
-            <h4 class="product-title">PRODUCT TITLE 1</h4>
-          </div>
-          <div class="card-content">
-            <p>Product Description</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum.</p>
-            <p class="product-price">£500</p>
-          </div>
-          <div class="card-footer">
-            <input type="button" class="button card-button" value="CHOOSE">
-          </div>
-        </div>
-        </div>
-        <div class="col">
-          <div class="product-card">
-          <div class="card-header">
-            <h4 class="product-title">PRODUCT TITLE 2</h4>
-          </div>
-          <div class="card-content">
-            <p>Product Description</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum.</p>
-            <p class="product-price">£200</p>
-          </div>
-          <div class="card-footer">
-            <input type="button" class="button card-button" value="CHOOSE">
-          </div>
-        </div>
-        </div>
-        <div class="col">
-          <div class="product-card">
-          <div class="card-header">
-            <h4 class="product-title">PRODUCT TITLE 3</h4>
-          </div>
-          <div class="card-content">
-            <p>Product Description</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum.</p>
-            <p class="product-price">£400</p>
-          </div>
-          <div class="card-footer">
-            <input type="button" class="button card-button" value="CHOOSE">
-          </div>
-        </div>
-        </div>
-        <div class="col">
-          <div class="product-card">
-          <div class="card-header">
-            <h4 class="product-title">PRODUCT TITLE 4</h4>
-          </div>
-          <div class="card-content">
-            <p>Product Description</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum.</p>
-            <p class="product-price">£700</p>
-          </div>
-          <div class="card-footer">
-            <input type="button" class="button card-button" value="CHOOSE">
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section id="snapshot">
-      <iframe id="video" width="512px" height="288px" src="https://www.youtube.com/embed/YHN-3VhUFZc?version=3&loop=1&playlist=YHN-3VhUFZc&controls=0" allowfullscreen></iframe>
-    </section>
-  </main>
-  <footer id="footer">    
-    <nav id="footer-nav">
-      <a class="foot-link" href="#top">Privacy</a>
-      <a class="foot-link" href="#to-about">Terms</a>
-      <a class="foot-link" href="#to-products">FAQs</a>
-    </nav>
-  </footer>
-</div>
+</body>
+
+</html>
