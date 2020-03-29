@@ -42,10 +42,14 @@ pre {
 
 .nav-link {
   color: black;
-  text-decoration: none;
   padding: 12px 30px;
+  text-decoration: none;
   border-bottom: 1px solid black;
   float: left;
+}
+
+.nav-link:hover {
+  font-weight: bold;
 }
 
 .nav-link:first-child {
