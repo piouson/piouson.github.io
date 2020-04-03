@@ -1,6 +1,7 @@
 # JSON - JavaScript Object Notation
+Visit [piouson.github.io](https://piouson.github.io/responsive-web-design/4-doc-page/) for HTML version.
 
-## Introduction: What is JSON
+## What is JSON
 Javascript Object Notation (JSON) is a lightweight data-interchange language. It is easy for humans to read and write. It is easy for machines to parse and generate.
 
 JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages.
