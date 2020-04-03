@@ -6,16 +6,39 @@ body {
 }
 
 header {
-  font-size: 1.6em;
+  font-size: 1.4em;
+}
+
+header h2 {
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  line-height: 1.4;
 }
 
 pre {
-  background-color: #EFF0F2;
-  font: 12px monospace;
+  font: 14px monospace;
   max-width: 90%;
   padding: 1em;
   margin: 2em 0;
   overflow: auto;
+}
+
+.good-code {
+  background-color: rgba(0, 255, 0, 0.2);
+  border-left: 3px solid darkgrey;
+}
+
+.bad-code {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-left: 3px solid darkgrey;
+}
+
+.inline-code {
+  background-color: #EFF0F2;
+  padding: 0.3em;
 }
 
 #navbar {
@@ -24,7 +47,7 @@ pre {
   top: 0;
   overflow-x: hidden;
   height: 100%;
-  width: 15em;
+  max-width: 15em;
   padding-top: 1em;
   box-sizing: border-box;
   border-right: 4px solid grey;
@@ -78,9 +101,6 @@ pre {
 }
 
 @media screen and (max-width: 849px) {
-  #navbar header {
-    text-align: center;
-  }
   #navbar {
     position: relative;
     width: 100%;
@@ -88,11 +108,8 @@ pre {
     overflow: auto;
     border-right: none;
   }
-  #navbar span {
-    display: none;
-  }
-  #navbar header:after {
-    content: "Powershell Documentation";
+  #navbar header {
+    text-align: center;
   }
   #navbar:hover #nav-links {
     display: flex;
@@ -102,17 +119,16 @@ pre {
     transform: rotate(-90deg);
     transition: 0.3s;
   }
+  #navbar:hover .menu-bar1,
+  #navbar:hover .menu-bar3 {
+    opacity: 0;
+    transition: 0.3s;
+  }
   .menu-icon {
     display: block;
   }
   #nav-header {
     padding-left: 0;
-  }
-  .nav-link:first-child {
-    border-top: none;
-  }
-  .nav-link:last-child {
-    border-bottom: none;
   }
   #nav-links {
     border-top: 2px solid black;
@@ -122,6 +138,12 @@ pre {
     height: 10em;
     display: none;
     text-align: center;
+  }
+  .nav-link:first-child {
+    border-top: none;
+  }
+  .nav-link:last-child {
+    border-bottom: none;
   }
   #main-doc {
     min-width: 20em;
