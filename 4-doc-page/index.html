@@ -64,8 +64,8 @@
         <pre class="bad-code"><code>'name':'Adam'</code></pre>
         <p>Multiple name-value pairs must be seperated by commas.</p>
         <pre class="good-code"><code>"firstName":"Adam", 
-  "lastName":"Banks", 
-  "age":28</code></pre>
+"lastName":"Banks", 
+"age":28</code></pre>
         <p>The complete syntax of a JSON object includes a pair of curly brackets.</p>
         <pre class="good-code"><code>{ "name":"Adam" }</code></pre>
         <p>The complete syntax of a JSON array includes a pair of square brackets.</p>
@@ -93,19 +93,19 @@
         <pre class="good-code"><code>{ "name":"Adam" }</code></pre>
         <p>An example of multiple name-value pairs.</p>
         <pre class="good-code"><code>{
-    "firstName":"Adam", 
-    "lastName":"Banks", 
-    "age":28
-  }</code></pre>
+  "firstName":"Adam", 
+  "lastName":"Banks", 
+  "age":28
+}</code></pre>
         <p>JSON Values can also be objects.</p>
         <pre class="good-code"><code>{ "student":{ "name":"Adam" } }</code></pre>
         <pre class="good-code"><code>{
-    "student": {
-    "firstName":"Adam", 
-    "lastName":"Banks", 
-    "age":28
-    }
-  }</code></pre>
+  "student": {
+  "firstName":"Adam", 
+  "lastName":"Banks", 
+  "age":28
+  }
+}</code></pre>
       </section>
       <section class="main-section" id="JSON_String">
         <header>
@@ -137,12 +137,12 @@
           <li>Exponents</li>
         </ul>
         <pre class="good-code"><code>{
-    "quantity": 13,
-    "price": 5.99,
-    "latitude": 42.210345,
-    "longitude": -118.894329,
-    "speed": 2.998E+8
-  }</code></pre>
+  "quantity": 13,
+  "price": 5.99,
+  "latitude": 42.210345,
+  "longitude": -118.894329,
+  "speed": 2.998E+8
+}</code></pre>
       </section>
       <section class="main-section" id="JSON_Boolean">
         <header>
@@ -151,11 +151,11 @@
         <p>JSON Values can be <code class="inline-code">true</code> or <code class="inline-code">false</code> all
           <strong>lowercase</strong>, and <strong>without the quotes.</strong></p>
         <pre class="good-code"><code>{
-    "name":"Adam Banks",
-    "age":28,
-    "employed":false,
-    "married":true
-  }</code></pre>
+  "name":"Adam Banks",
+  "age":28,
+  "employed":false,
+  "married":true
+}</code></pre>
       </section>
       <section class="main-section" id="JSON_Array">
         <header>
@@ -163,14 +163,14 @@
         </header>
         <p>JSON Values can be Arrays. This is a list of any of the JSON data types, object, string, number, array, boolean or null. All the Values in an Array must be of the same data type.</p>
         <pre class="good-code"><code>{
-    "name":"Adam Banks",
-    "age":28,
-    "children": [ 
-      "Mike", 
-      "Ari", 
-      "Luna" 
-    ]
-  }</code></pre>
+  "name":"Adam Banks",
+  "age":28,
+  "children": [ 
+    "Mike", 
+    "Ari", 
+    "Luna" 
+  ]
+}</code></pre>
       </section>
       <section class="main-section" id="JSON_Null">
         <header>
@@ -180,10 +180,10 @@
             quotes.</strong>
         </p>
         <pre class="good-code"><code>{
-    "name":"Adam Banks",
-    "age":28,
-    "children": null
-  }</code></pre>
+  "name":"Adam Banks",
+  "age":28,
+  "children": null
+}</code></pre>
       </section>
       <section class="main-section" id="JSON_Schema">
         <header>
@@ -209,42 +209,42 @@
         <pre class="good-code"><code>false</code></pre>
         <p>Here is a complete example of a schema document:</p>
         <pre class="good-code"><code>{
-    "$id": "https://your-domain.com/example.schema.json",
-    "$schema": "http://json-schema.org/schema#",
-    "title": "Student Record",
-    "description": "Validating a student record.",
-    "type": "object",
-    "required": [ "firstName", "lastName", "age", "email" ],
-    "properties": {
-      "firstName": {
-        "type": "string",
-        "minLength": 2,
-        "maxLength": 50
-      },
-      "lastName": {
-        "type": "string",
-        "minLength": 2,
-        "maxLength": 50
-      },
-      "middleName": {
-        "type": "string",
-        "minLength": 2,
-        "maxLength": 50
-      },
-      "age": {
-        "type": "number",
-        "minimum": 18,
-        "maximum": 180
-      },
-      "email": {
-        "type": "string",
-        "pattern": "^[a-z0-9_-]+(\\.[_a-z0-9]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,10})$"
-      },
-      "married": {
-        "type": "boolean"
-      }
+  "$id": "https://your-domain.com/example.schema.json",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Student Record",
+  "description": "Validating a student record.",
+  "type": "object",
+  "required": [ "firstName", "lastName", "age", "email" ],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "middleName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "age": {
+      "type": "number",
+      "minimum": 18,
+      "maximum": 180
+    },
+    "email": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+(\\.[_a-z0-9]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,10})$"
+    },
+    "married": {
+      "type": "boolean"
     }
-  }</code></pre>
+  }
+}</code></pre>
       </section>
       <section class="main-section" id="References">
         <header>
