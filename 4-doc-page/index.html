@@ -13,13 +13,21 @@
   <div id="page">
 
     <nav id="navbar">
-      <header id="nav-header"><span>Powershell</span></header>
+      <header id="nav-header">
+        <h1><span>JSON</span></h1>
+      </header>
       <div id="nav-links">
-        <a class="nav-link" href="#Section_One">Section One</a>
-        <a class="nav-link" href="#Section_Two">Section Two</a>
-        <a class="nav-link" href="#Section_Three">Section Three</a>
-        <a class="nav-link" href="#Section_Four">Section Four</a>
-        <a class="nav-link" href="#Section_Five">Section Five</a>
+        <a class="nav-link" href="#What_is_JSON">What is JSON</a>
+        <a class="nav-link" href="#JSON_Syntax">JSON Syntax</a>
+        <a class="nav-link" href="#JSON_Data_Types">JSON Data Types</a>
+        <a class="nav-link" href="#JSON_Object">JSON Object</a>
+        <a class="nav-link" href="#JSON_String">JSON String</a>
+        <a class="nav-link" href="#JSON_Number">JSON Number</a>
+        <a class="nav-link" href="#JSON_Boolean">JSON Boolean</a>
+        <a class="nav-link" href="#JSON_Array">JSON Array</a>
+        <a class="nav-link" href="#JSON_Null">JSON Null</a>
+        <a class="nav-link" href="#JSON_Schema">JSON Schema</a>
+        <a class="nav-link" href="#References">References</a>
       </div>
       <div class="menu-icon">
         <div class="menu-icon-bar menu-bar1"></div>
@@ -29,59 +37,223 @@
     </nav>
 
     <main id="main-doc">
-      <section class="main-section" id="Section_One">
-        <header>Section One</header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <header>
+        <h2>Javascript Object Notation</h2>
+      </header>
+      <section class="main-section" id="What_is_JSON">
+        <header>
+          <h3>What is JSON</h3>
+        </header>
+        <p>Javascript Object Notation (JSON) is a lightweight data-interchange language. It is easy for humans to read and write. It is easy for machines to parse and generate.</p>
+        <p>JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages.</p>
+      </section>
+      <section class="main-section" id="JSON_Syntax">
+        <header>
+          <h3>JSON Syntax</h3>
+        </header>
+        <p>JSON can be written in two forms:</p>
+        <ul>
+          <li><strong>Object</strong> - a collection of <strong>name-value</strong> pairs enclosed in curly brackets
+            <code>{}</code>.</li>
+          <li><strong>Array</strong> - an ordered list of <strong>values</strong> enclosed in square brackets
+            <code>[]</code>.</li>
+        </ul>
+        <p>Below is a basic example of a name-value pair.</p>
+        <pre class="good-code"><code>"name":"Adam"</code></pre>
+        <p>A name-value pair cannot be enclosed in single quotes, double quotes must be used.</p>
+        <pre class="bad-code"><code>'name':'Adam'</code></pre>
+        <p>Multiple name-value pairs must be seperated by commas.</p>
+        <pre class="good-code"><code>"firstName":"Adam", 
+  "lastName":"Banks", 
+  "age":28</code></pre>
+        <p>The complete syntax of a JSON object includes a pair of curly brackets.</p>
+        <pre class="good-code"><code>{ "name":"Adam" }</code></pre>
+        <p>The complete syntax of a JSON array includes a pair of square brackets.</p>
+        <pre class="good-code"><code>[ "Adam","Abel","Alex" ]</code></pre>
+      </section>
+      <section class="main-section" id="JSON_Data_Types">
+        <header>
+          <h3>JSON Data Types</h3>
+        </header>
+        <p>The following are the JSON data types:</p>
+        <ul>
+          <li>Object (JSON Object)</li>
+          <li>String</li>
+          <li>Number</li>
+          <li>Boolean</li>
+          <li>Array</li>
+          <li>Null</li>
+        </ul>
+      </section>
+      <section class="main-section" id="JSON_Object">
+        <header>
+          <h3>JSON Object</h3>
+        </header>
+        <p>As mentioned before, JSON object must be enclosed in curly braces.</p>
+        <pre class="good-code"><code>{ "name":"Adam" }</code></pre>
+        <p>An example of multiple name-value pairs.</p>
+        <pre class="good-code"><code>{
+    "firstName":"Adam", 
+    "lastName":"Banks", 
+    "age":28
+  }</code></pre>
+        <p>JSON Values can also be objects.</p>
+        <pre class="good-code"><code>{ "student":{ "name":"Adam" } }</code></pre>
+        <pre class="good-code"><code>{
+    "student": {
+    "firstName":"Adam", 
+    "lastName":"Banks", 
+    "age":28
+    }
+  }</code></pre>
+      </section>
+      <section class="main-section" id="JSON_String">
+        <header>
+          <h3>JSON String</h3>
+        </header>
+        <p>As we have seen above, JSON Values can be a string, "this is a string".</br>
+          In addition, the following characters must be escaped with a backslash <code class="inline-code">\</code> when used in a JSON string:</p>
+        <ul>
+          <li>\" (double quotes)</li>
+          <li>\ (backslash)</li>
+          <li>\/ (forward slash)</li>
+          <li>\b (backspace)</li>
+          <li>\f (form feed)</li>
+          <li>\t (tab)</li>
+          <li>\n (new line)</li>
+          <li>\r (carriage return)</li>
+          <li>\u followed by hexadecimal characters (e.g., the smiley emoticon \u263A)</li>
+        </ul>
+        <pre class="good-code"><code>{ "description":"the ship was named \"hero of the sea\" by vote! \u263A" }</code></pre>
+      </section>
+      <section class="main-section" id="JSON_Number">
+        <header>
+          <h3>JSON Number</h3>
+        </header>
+        <p>JSON Values can be positive or negative numbers <strong>without the quotes.</strong></p>
+        <ul>
+          <li>Integers</li>
+          <li>Decimals</li>
+          <li>Exponents</li>
+        </ul>
+        <pre class="good-code"><code>{
+    "quantity": 13,
+    "price": 5.99,
+    "latitude": 42.210345,
+    "longitude": -118.894329,
+    "speed": 2.998E+8
+  }</code></pre>
+      </section>
+      <section class="main-section" id="JSON_Boolean">
+        <header>
+          <h3>JSON Boolean</h3>
+        </header>
+        <p>JSON Values can be <code class="inline-code">true</code> or <code class="inline-code">false</code> all
+          <strong>lowercase</strong>, and <strong>without the quotes.</strong></p>
+        <pre class="good-code"><code>{
+    "name":"Adam Banks",
+    "age":28,
+    "employed":false,
+    "married":true
+  }</code></pre>
+      </section>
+      <section class="main-section" id="JSON_Array">
+        <header>
+          <h3>JSON Array</h3>
+        </header>
+        <p>JSON Values can be Arrays. This is a list of any of the JSON data types, object, string, number, array, boolean or null. All the Values in an Array must be of the same data type.</p>
+        <pre class="good-code"><code>{
+    "name":"Adam Banks",
+    "age":28,
+    "children": [ 
+      "Mike", 
+      "Ari", 
+      "Luna" 
+    ]
+  }</code></pre>
+      </section>
+      <section class="main-section" id="JSON_Null">
+        <header>
+          <h3>JSON Null</h3>
+        </header>
+        <p>JSON Values can be <code>null</code>, all <strong>lowercase</strong>, and <strong>without the
+            quotes.</strong>
         </p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <pre><code>$uri = "https://github.com/piouson"
-Invoke-RestMethod -Uri $uri -Method GET</code></pre>
-        <ul>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
+        <pre class="good-code"><code>{
+    "name":"Adam Banks",
+    "age":28,
+    "children": null
+  }</code></pre>
       </section>
-      <section class="main-section" id="Section_Two">
-        <header>Section Two</header>
-        <p></p>
-        <p></p>
-        <code></code>
+      <section class="main-section" id="JSON_Schema">
+        <header>
+          <h3>JSON Schema</h3>
+        </header>
+        <p>JSON Schema is a vocabulary that allows you to annotate and validate JSON documents. The list of data types available in JSON leads to all kinds of data representation.</p>
+        <p>This is where the JSON Schema comes in, it allows you to define what is valid and acceptable in your JSON document. The key features include:</p>
         <ul>
-          <li></li>
+          <li>Describes your existing data format(s).</li>
+          <li>Provides clear human- and machine- readable documentation.</li>
+          <li>Validates data which is useful for:
+            <ul>
+              <li>Automated testing.</li>
+              <li>Ensuring quality of client submitted data.</li>
+            </ul>
+          </li>
         </ul>
+        <p>The JSON document being validated or described is called the <strong>instance</strong>, and the document containing the validation description is called the <strong>schema</strong>.</p>
+        <p>The most basic schema is a blank JSON object. This accepts anything, as long as it’s valid JSON</p>
+        <pre class="good-code"><code>{}</code></pre>
+        <p>You can also use <code class="inline-code">true</code> in place of <code class="inline-code">{}</code> to represent a schema that matches anything, or the opposite<code class="inline-code">false</code> for a schema that matches nothing.</p>
+        <pre class="good-code"><code>true</code></pre>
+        <pre class="good-code"><code>false</code></pre>
+        <p>Here is a complete example of a schema document:</p>
+        <pre class="good-code"><code>{
+    "$id": "https://your-domain.com/example.schema.json",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Student Record",
+    "description": "Validating a student record.",
+    "type": "object",
+    "required": [ "firstName", "lastName", "age", "email" ],
+    "properties": {
+      "firstName": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 50
+      },
+      "lastName": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 50
+      },
+      "middleName": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 50
+      },
+      "age": {
+        "type": "number",
+        "minimum": 18,
+        "maximum": 180
+      },
+      "email": {
+        "type": "string",
+        "pattern": "^[a-z0-9_-]+(\\.[_a-z0-9]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,10})$"
+      },
+      "married": {
+        "type": "boolean"
+      }
+    }
+  }</code></pre>
       </section>
-      <section class="main-section" id="Section_Three">
-        <header>Section Three</header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <ul>
-          <li></li>
-        </ul>
-      </section>
-      <section class="main-section" id="Section_Four">
-        <header>Section Four</header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <ul>
-          <li></li>
-        </ul>
-      </section>
-      <section class="main-section" id="Section_Five">
-        <header>Section Five</header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <ul>
-          <li></li>
-        </ul>
+      <section class="main-section" id="References">
+        <header>
+          <h3>References</h3>
+        </header>
+        <p>All documentation on this page is taken from <a href="https://www.json.org" target="_blank">JSON.org</a> and
+          <a href="http://json-schema.org" target="_blank">JSON-Schema.org</a></p>
       </section>
     </main>
-
-    <footer id="footer">
-    </footer>
 
   </div>
 </body>
