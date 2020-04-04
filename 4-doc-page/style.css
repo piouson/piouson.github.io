@@ -9,6 +9,10 @@ header {
   font-size: 1.4em;
 }
 
+header h1 {
+  margin-bottom: 0;
+}
+
 header h2 {
   text-align: center;
   margin: 0;
