@@ -17,9 +17,9 @@
 }
 
 html {
+  -webkit-overflow-scrolling: touch;
   margin: 0;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -109,6 +109,7 @@ body {
   display: block;
   margin: 0 20px;
   font-size: 4em;
+  text-decoration: none;
 }
 
 section {
