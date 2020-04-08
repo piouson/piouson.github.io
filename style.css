@@ -17,27 +17,19 @@
 }
 
 html {
-  -webkit-overflow-scrolling: touch;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 body {
   font: 1em "Roboto", Verdana;
   height: 100vh;
   margin-top: 40px;
-  overflow: hidden;
 }
 
 #main {
   min-height: calc(100vh - 40px);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: auto;
-  scroll-behavior: smooth;
 }
 
 .grow-1 {
@@ -99,19 +91,6 @@ body {
   opacity: 1;
 }
 
-.icons {
-  display: flex;
-}
-
-.fab,
-.far {
-  color: var(--main-black);
-  display: block;
-  margin: 0 20px;
-  font-size: 4em;
-  text-decoration: none;
-}
-
 section {
   padding-top: 100px;
   min-height: 100vh;
@@ -119,7 +98,6 @@ section {
 
 #welcome-section {
   padding-top: 20vh;
-  height: 100vh;
 }
 
 .header {
@@ -151,6 +129,20 @@ section {
   font-size: 1.4em;
   border-top: 1px solid var(--main-black-3);
   border-bottom: 1px solid var(--main-black-3);
+}
+
+.icons {
+  display: flex;
+}
+
+.fab,
+.far {
+  color: var(--main-black);
+  display: block;
+  margin: 0 15px;
+  font-size: 3.5em;
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 #projects {
@@ -291,5 +283,17 @@ section {
     -ms-flex: 0 0 90%;
     flex: 0 0 90%;
     max-width: 85%;
+  }
+  .author {
+    font-size: 4em;
+  }
+  .role {
+    padding: 15px 5px;
+    font-size: 1.1em;
+  }
+  .fab,
+  .far {
+    font-size: 3em;
+    opacity: 1;
   }
 }
