@@ -145,6 +145,11 @@ section {
   opacity: 0.6;
 }
 
+.fab:hover,
+.far:hover {
+  opacity: 1;
+}
+
 #projects {
   display: -webkit-box;
   display: -ms-flexbox;
