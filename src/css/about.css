@@ -1,0 +1,16 @@
+#about {
+  height: 90vh;
+  max-width: 90rem;
+}
+
+.about-article {
+  min-height: 40vh;
+  width: auto;
+  max-width: 56rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-article {
+    height: 75vh;
+  }
+}

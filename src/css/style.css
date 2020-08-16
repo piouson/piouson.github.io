@@ -1,5 +1,7 @@
 @import url(fonts.css);
 @import url(header.css);
+@import url(icons.css);
+@import url(about.css);
 
 :root {
   --main-white: rgba(240, 240, 240, 1);
@@ -14,26 +16,8 @@ body {
   background-color: var(--main-black);
 }
 
-.grow-1 {
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-.grow-1:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.grow-2 {
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.grow-2:hover {
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
+.main > section {
+  max-width: 90rem;
+  min-height: 100vh;
+  padding-top: 10vh;
 }
