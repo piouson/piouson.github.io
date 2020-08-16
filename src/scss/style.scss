@@ -1,0 +1,10 @@
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  white: rgba(240, 240, 240, 1),
+  gray: rgba(240, 240, 240, 0.6),
+  gray-dark: rgba(240, 240, 240, 0.1),
+  dark: rgba(24, 24, 35, 1),
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";

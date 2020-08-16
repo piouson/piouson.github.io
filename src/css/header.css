@@ -1,0 +1,32 @@
+header {
+  border-bottom: 0.05rem solid var(--main-white-3);
+}
+
+nav {
+  height: 10vh;
+  max-width: 90rem;
+  background-color: var(--main-black);
+}
+
+.navbar-nav {
+  background-color: var(--main-black);
+}
+
+.nav-link {
+  color: var(--main-white-2);
+  letter-spacing: 0.05rem;
+  font-size: x-large;
+}
+
+.nav-link:hover {
+  color: var(--main-white);
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link:first-child {
+    border-bottom: 0.05rem solid var(--main-white-3);
+    border-top: 0.05rem solid var(--main-white-3);
+  }
+}
