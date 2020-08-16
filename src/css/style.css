@@ -2,12 +2,17 @@
 @import url(header.css);
 @import url(icons.css);
 @import url(about.css);
+@import url(projects.css);
 
 :root {
   --main-white: rgba(240, 240, 240, 1);
   --main-white-2: rgba(240, 240, 240, 0.6);
   --main-white-3: rgba(240, 240, 240, 0.1);
   --main-black: rgba(24, 24, 35, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
