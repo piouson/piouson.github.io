@@ -1,16 +1,16 @@
 {
   "name": "piouson.github.io",
   "version": "2.0.0",
-  "description": "My profile page with some of my work.",
+  "description": "My profile page containing some of my work.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack index.js",
-    "webpack:dev": "webpack index.js --mode=development",
+    "webpack": "webpack --mode=development",
     "webpack:watch": "webpack --progress --watch",
     "build": "webpack --progress",
     "start": "webpack-dev-server --open",
-    "dev": "webpack-dev-server --mode=development --open"
+    "dev": "webpack-dev-server --mode=development --open",
+    "lint": "stylelint \"src/css/*.css\""
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,8 @@
     "precss": "^4.0.0",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

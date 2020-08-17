@@ -24,9 +24,3 @@ i.fab {
     min-width: 10rem;
   }
 }
-
-@media screen and (max-width: 992px) {
-  .icons-footer {
-    width: 20rem;
-  }
-}

@@ -15,14 +15,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font: 1rem Sen, Roboto;
-  color: var(--main-white);
-  background-color: var(--main-black);
-}
-
 .main > section {
   max-width: 90rem;
   min-height: 100vh;
-  padding-top: 10vh;
+  padding-top: 10vh !important;
 }
