@@ -18,9 +18,8 @@ nav {
   font-size: x-large;
 }
 
-.nav-link:hover {
+.nav-link:not(.active):hover {
   color: var(--main-white);
-  font-weight: bold;
   opacity: 1;
 }
 
