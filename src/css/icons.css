@@ -1,0 +1,26 @@
+i.fab {
+  color: var(--main-white-2);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.fab:hover {
+  color: var(--main-white);
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.icons-main {
+  width: 24rem;
+  min-width: 18rem;
+}
+
+.icons-footer {
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 1200px) {
+  .icons-main {
+    min-width: 10rem;
+  }
+}

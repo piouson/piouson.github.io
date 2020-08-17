@@ -1,0 +1,39 @@
+.border-top-rounded {
+  border-radius: 50px 50px 0 0;
+}
+
+.border-rounded {
+  border-radius: 50px;
+}
+
+.border-glow {
+  box-shadow: 1px 1px 8px var(--main-white-2), -1px -1px 8px var(--main-white-2);
+}
+
+.card:hover {
+  color: var(--main-white);
+}
+
+.project-content {
+  color: var(--main-white-2);
+  background-color: var(--main-black);
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.03);
+}
+
+.show-all {
+  background-color: var(--main-black);
+  color: var(--main-white-2);
+  text-decoration: none;
+}
+
+.show-all:hover {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}

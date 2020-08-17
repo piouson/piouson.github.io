@@ -1,0 +1,17 @@
+@import url(../css/fonts.css);
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$body-bg: rgba(24, 24, 35, 1);
+$body-color: rgba(240, 240, 240, 1);
+$font-family-base: Sen, Roboto;
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  white: rgba(240, 240, 240, 1),
+  gray: rgba(240, 240, 240, 0.6),
+  gray-dark: rgba(240, 240, 240, 0.1),
+  dark: rgba(24, 24, 35, 1),
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
