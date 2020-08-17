@@ -30,8 +30,8 @@ jobs:
 
     - name: Install, Lint, Test and Build 🔧
       run: |
-        npm run lint
         npm ci
+        npm run lint
         npm test
         npm run build --if-present
 
