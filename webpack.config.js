@@ -13,7 +13,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Piouson - Portfolio Page",
       template: "./src/index.html",
-      favicon: "./src/assets/images/piouson-logo-small.svg",
+      favicon: "./src/assets/images/favicon.svg",
       minify: true,
     }),
   ],

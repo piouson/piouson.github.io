@@ -11,7 +11,7 @@ i.fab {
 }
 
 .icons-main {
-  width: 24rem;
+  width: auto;
   min-width: 18rem;
 }
 
@@ -21,6 +21,6 @@ i.fab {
 
 @media screen and (max-width: 1200px) {
   .icons-main {
-    min-width: 10rem;
+    min-width: auto;
   }
 }
