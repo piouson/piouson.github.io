@@ -4,6 +4,7 @@ header {
 
 nav {
   height: 10vh;
+  min-height: 4rem;
   max-width: 90rem;
   background-color: var(--main-black);
 }
