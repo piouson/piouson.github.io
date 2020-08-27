@@ -1,0 +1,32 @@
+header {
+  border-bottom: 0.05rem solid $darkGray;
+}
+
+nav {
+  height: $navHeight;
+  min-height: $navHeightMin;
+  max-width: $appWidth;
+  background-color: $dark;
+}
+
+.navbar-nav {
+  background-color: $dark;
+}
+
+.nav-link {
+  color: $gray;
+  letter-spacing: 0.05rem;
+  font-size: x-large;
+}
+
+.nav-link:not(.active):hover {
+  color: $white;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link:first-child {
+    border-bottom: 0.05rem solid $darkGray;
+    border-top: 0.05rem solid $darkGray;
+  }
+}

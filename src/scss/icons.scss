@@ -1,12 +1,9 @@
 i.fab {
-  color: var(--main-white-2);
-  text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
 
 .fab:hover {
-  color: var(--main-white);
-  opacity: 1;
+  color: $white;
   transform: scale(1.3);
 }
 
