@@ -1,15 +1,12 @@
 #about {
   height: 90vh;
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+  }
 }
 
 .about-article {
   width: auto;
   max-width: 56rem;
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-height: 576px) {
-  #about {
-    height: auto;
-  }
 }

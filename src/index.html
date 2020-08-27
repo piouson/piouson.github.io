@@ -87,13 +87,13 @@
           </div>
           <div
             class="icons icons-main display-4 text-center container row row-cols-md-4 row-cols-lg-1 row-cols-xl-4 m-0 p-0">
-            <a class="col text-gray" id="github-link" href="https://github.com/piouson" target="_blank">
+            <a class="col" id="github-link" href="https://github.com/piouson" target="_blank">
               <i class="py-lg-3 py-xl-0 fab fa-github"></i></a>
-            <a class="col text-gray" id="codepen-link" href="https://codepen.io/piouson/" target="_blank">
+            <a class="col" id="codepen-link" href="https://codepen.io/piouson/" target="_blank">
               <i class="py-lg-3 py-xl-0 fab fa-codepen"></i></a>
-            <a class="col text-gray" id="instagram-link" href="https://www.instagram.com/piouson.code" target="_blank">
+            <a class="col" id="instagram-link" href="https://www.instagram.com/piouson.code" target="_blank">
               <i class="py-lg-3 py-xl-0 fab fa-instagram"></i></a>
-            <a class="col text-gray" id="twitter-link" href="https://twitter.com/piouson_code" target="_blank">
+            <a class="col" id="twitter-link" href="https://twitter.com/piouson_code" target="_blank">
               <i class="py-lg-3 py-xl-0 fab fa-twitter"></i></a>
           </div>
         </div>
@@ -173,7 +173,9 @@
         </div>
       </section>
     </main>
-    <footer class="col mx-0 px-5 py-3 container border-top border-gray-dark">
+  </div>
+  <footer class="col mx-0 px-5 py-3 container border-top border-gray-dark">
+    <div id="footer" class="mx-auto px-4 px-md-0">
       <div class="icons icons-footer text-center text-md-right py-3">
         <a class="m-2" id="github-link" href="https://github.com/piouson" target="_blank">
           <i class="fab fa-github"></i></a>
@@ -187,50 +189,50 @@
       <div class="copyright text-center text-md-right pr-2">
         <p class="lead text-gray">&copy 2020 piouson</p>
       </div>
-      <a class="footer-github-corner d-block d-md-none" href="https://github.com/piouson/piouson.github.io"
-        title="Fork me on GitHub" target="_blank">
-        <svg width="80" height="80" viewbox="0 0 250 250">
-          <path d="M0 0h250v250"></path>
-          <path class="footer-octo-arm"
-            d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2"
-            fill="currentColor" style="transform-origin:130px 110px"></path>
-          <path class="footer-octo-body"
-            d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
-            fill="currentColor"></path>
-        </svg>
-        <style>
-          .footer-github-corner svg {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            transform: scale(1, -1);
-            color: #181823;
-            fill: #f2f2f2;
+    </div>
+    <a class="footer-github-corner d-block d-md-none" href="https://github.com/piouson/piouson.github.io"
+      title="Fork me on GitHub" target="_blank">
+      <svg width="80" height="80" viewbox="0 0 250 250">
+        <path d="M0 0h250v250"></path>
+        <path class="footer-octo-arm"
+          d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2"
+          fill="currentColor" style="transform-origin:130px 110px"></path>
+        <path class="footer-octo-body"
+          d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
+          fill="currentColor"></path>
+      </svg>
+      <style>
+        .footer-github-corner svg {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          transform: scale(1, -1);
+          color: #181823;
+          fill: #f2f2f2;
+        }
+  
+        .footer-github-corner:hover .footer-octo-arm {
+          animation: footer-octocat-wave .56s;
+        }
+  
+        @keyframes footer-octocat-wave {
+  
+          0%,
+          100% {
+            transform: rotate(0);
           }
-    
-          .footer-github-corner:hover .footer-octo-arm {
-            animation: footer-octocat-wave .56s;
+  
+          20%,
+          60% {
+            transform: rotate(-20deg);
           }
-    
-          @keyframes footer-octocat-wave {
-    
-            0%,
-            100% {
-              transform: rotate(0);
-            }
-    
-            20%,
-            60% {
-              transform: rotate(-20deg);
-            }
-    
-            40%,
-            80% {
-              transform: rotate(10deg);
-            }
+  
+          40%,
+          80% {
+            transform: rotate(10deg);
           }
-        </style>
-      </a>
-    </footer>
-  </div>
+        }
+      </style>
+    </a>
+  </footer>
 </body>

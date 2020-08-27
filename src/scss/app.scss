@@ -2,11 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-#app {
-  max-width: 90rem;
+#app, #footer {
+  max-width: $appWidth;
 }
 
 section {
   min-height: 100vh;
-  padding-top: 10vh !important;
 }
