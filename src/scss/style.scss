@@ -7,8 +7,6 @@ $gray: rgba(240, 240, 240, 0.6);
 $darkGray: rgba(240, 240, 240, 0.1);
 $dark: rgba(24, 24, 35, 1);
 $appWidth: 90rem;
-$navHeight: 10vh;
-$navHeightMin: 4rem;
 
 $body-bg: $dark;
 $body-color: $white;
@@ -23,20 +21,8 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "app";
 @import "header";
 @import "icons";
 @import "about";
 @import "projects";
-
-html {
-  scroll-behavior: smooth;
-}
-
-#app {
-  max-width: 90rem;
-}
-
-section {
-  min-height: 100vh;
-  padding-top: 10vh !important;
-}
