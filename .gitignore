@@ -3,3 +3,5 @@ node_modules
 dist
 build
 debug*
+cypress/videos
+cypress/screenshots

@@ -1,7 +1,6 @@
-@mixin font-face($path, $family, $style: normal, $weight: 400, $display: swap) {
+@mixin font-face($path, $family, $weight: 400, $display: swap) {
   @font-face {
     font-family: $family;
-    font-style: $style;
     font-weight: $weight;
     font-display: $display;
     src: url("#{$path}.woff") format("woff"),
@@ -10,8 +9,12 @@
 }
 
 @include font-face("../assets/fonts/Sen-Regular", Sen);
-@include font-face("../assets/fonts/Sen-Regular", Sen, bold, 700);
-@include font-face("../assets/fonts/Sen-Regular", Sen, bolder, 800);
-@include font-face("../assets/fonts/Sen-Regular", Roboto);
-@include font-face("../assets/fonts/Sen-Regular", Roboto, bold, 700);
-@include font-face("../assets/fonts/Sen-Regular", Roboto, bolder, 800);
+@include font-face("../assets/fonts/Sen-Bold", Sen, 700);
+@include font-face("../assets/fonts/Sen-ExtraBold", Sen, 800);
+@include font-face("../assets/fonts/Roboto-Regular", Roboto);
+@include font-face("../assets/fonts/Roboto-Bold", Roboto, 700);
+@include font-face("../assets/fonts/Roboto-Black", Roboto, 900);
+@include font-face(
+  "../assets/fonts/Saira-Stencil-One-Regular",
+  "Saira Stencil One"
+);
