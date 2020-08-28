@@ -1,0 +1,40 @@
+$borderRadius: 2rem;
+
+#projects {
+  padding-top: 10vh;
+}
+
+.border-top-rounded {
+  border-radius: $borderRadius $borderRadius 0 0;
+}
+
+.border-rounded {
+  border-radius: $borderRadius;
+}
+
+.border-glow {
+  box-shadow: 1px 1px 8px $gray, -1px -1px 8px $gray;
+}
+
+.card:hover {
+  color: $white;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.03);
+}
+
+.show-all {
+  background-color: $dark;
+  color: $gray;
+  text-decoration: none;
+}
+
+.show-all:hover {
+  background-color: $dark;
+  color: $white;
+}

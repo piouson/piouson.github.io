@@ -1,17 +1,30 @@
-@import url(../css/fonts.css);
+@import "fonts";
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 
-$body-bg: rgba(24, 24, 35, 1);
-$body-color: rgba(240, 240, 240, 1);
+$white: rgba(240, 240, 240, 1);
+$gray: rgba(240, 240, 240, 0.6);
+$darkGray: rgba(240, 240, 240, 0.1);
+$dark: rgba(24, 24, 35, 1);
+$appWidth: 90rem;
+$lineWidth: 0.05rem;
+
+$body-bg: $dark;
+$body-color: $white;
 $font-family-base: Sen, Roboto;
 $enable-responsive-font-sizes: true;
 
 $theme-colors: (
-  white: rgba(240, 240, 240, 1),
-  gray: rgba(240, 240, 240, 0.6),
-  gray-dark: rgba(240, 240, 240, 0.1),
-  dark: rgba(24, 24, 35, 1),
+  white: $white,
+  gray: $gray,
+  gray-dark: $darkGray,
+  dark: $dark,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "forkme";
+@import "app";
+@import "header";
+@import "icons";
+@import "about";
+@import "projects";

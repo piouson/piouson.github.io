@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#app,
+#footer {
+  max-width: $appWidth;
+}
+
+section {
+  min-height: 100vh;
+}

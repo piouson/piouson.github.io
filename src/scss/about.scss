@@ -1,0 +1,19 @@
+.about-article {
+  width: auto;
+  max-width: 56rem;
+
+  @include media-breakpoint-down(xs) {
+    h1 {
+      font-size: xx-large;
+    }
+    p {
+      font-size: large;
+    }
+  }
+}
+
+#hero {
+  background: transparent;
+  min-height: 80vh !important;
+  margin-top: 10vh;
+}

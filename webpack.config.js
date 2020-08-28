@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const PrettierPlugin = require("prettier-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -16,6 +17,7 @@ module.exports = {
       favicon: "./src/assets/images/favicon.svg",
       minify: true,
     }),
+    new PrettierPlugin(),
   ],
   output: {
     filename: "bundle.js",
@@ -37,14 +39,6 @@ module.exports = {
             presets: ["@babel/preset-env"]
           }
         },
-      },
-      {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader",
-        ],
       },
       {
         test: /\.scss$/,
@@ -78,7 +72,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
             loader: "file-loader",

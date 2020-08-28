@@ -1,0 +1,33 @@
+$navHeight: 10vh;
+$navHeightMin: 4rem;
+$fontSize: x-large;
+$shadow: 0.25rem;
+
+header {
+  border-bottom: $lineWidth solid $darkGray;
+}
+
+nav {
+  height: $navHeight;
+  min-height: $navHeightMin;
+  max-width: $appWidth;
+  background-color: $dark;
+}
+
+.nav-link {
+  color: $gray;
+  letter-spacing: $lineWidth;
+  font-size: $fontSize;
+
+  &:not(.active):hover {
+    color: $white;
+    opacity: 1;
+  }
+
+  &:first-child {
+    @include media-breakpoint-down(sm) {
+      border-bottom: $lineWidth solid $darkGray;
+      border-top: $lineWidth solid $darkGray;
+    }
+  }
+}
