@@ -7,6 +7,10 @@ header {
   border-bottom: $lineWidth solid $darkGray;
 }
 
+#brand-name {
+  font-family: "Saira Stencil One", cursive;
+}
+
 nav {
   height: $navHeight;
   min-height: $navHeightMin;

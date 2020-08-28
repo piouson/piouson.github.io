@@ -1,6 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const PrettierPlugin = require("prettier-webpack-plugin");
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Piouson - Portfolio Page",
       template: "./src/index.html",
-      favicon: "./src/assets/images/favicon.svg",
+      favicon: "./src/assets/icons/favicon.svg",
       minify: true,
     }),
     new PrettierPlugin(),
