@@ -4,7 +4,8 @@
     font-style: $style;
     font-weight: $weight;
     font-display: $display;
-    src: url("#{$path}.woff") format("woff"), url("#{$path}.ttf") format('truetype');
+    src: url("#{$path}.woff") format("woff"),
+      url("#{$path}.ttf") format("truetype");
   }
 }
 

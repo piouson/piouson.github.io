@@ -1,0 +1,48 @@
+@mixin forkme($placement) {
+  svg {
+    position: absolute;
+    right: 0;
+    color: $dark;
+    fill: $white;
+
+    @if $placement == top {
+      top: 0;
+    } @else if $placement == bottom {
+      bottom: 0;
+      transform: scale(1, -1);
+    } @else {
+      @error "Unknown icon placement #{$placement}.";
+    }
+  }
+
+  &:hover {
+    .octo-arm {
+      animation: octocat-wave 0.56s;
+    }
+  }
+}
+
+.github-corner-header {
+  @include forkme(top);
+}
+
+.github-corner-footer {
+  @include forkme(bottom);
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-20deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}

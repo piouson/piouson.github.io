@@ -22,6 +22,7 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "forkme";
 @import "app";
 @import "header";
 @import "icons";
