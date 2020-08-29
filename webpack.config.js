@@ -2,19 +2,21 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const PrettierPlugin = require("prettier-webpack-plugin");
+const config = require("./config");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: path.resolve(__dirname, "src/index.js"),
   devServer: {
-    contentBase: "./dist",
+    contentBase: path.resolve(__dirname, "dist"),
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Piouson - Portfolio Page",
-      template: "./src/index.html",
-      favicon: "./src/assets/icons/favicon.svg",
+      title: config.pageTitle,
+      template: path.resolve(__dirname, "src/index.ejs"),
+      templateParameters: config,
+      favicon: path.resolve(__dirname, "src/assets/icons/favicon.svg"),
       minify: true,
     }),
     new PrettierPlugin(),
@@ -66,7 +68,8 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/images/",
+              outputPath: "./assets/images/",
+              esModule: false,
             }
           }
         ],
@@ -78,15 +81,11 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/fonts/",
+              outputPath: "./assets/fonts/",
             }
           }
         ],
       },
-      {
-        test: /\.html$/,
-        use: ["html-loader"],
-      }
     ]
   }
 };

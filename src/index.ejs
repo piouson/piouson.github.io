@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piouson - Profile Page</title>
+    <title><%= pageTitle %></title>
   </head>
 
   <body id="top" data-spy="scroll" data-target="#topnav" data-offset="5">
@@ -18,7 +18,7 @@
             class="navbar-brand px-4 px-md-0"
             href="https://github.com/piouson"
           >
-            <h1 class="my-0 display-4">PIOUSON</h1>
+            <h1 class="my-0 display-4"><%= brandName.toUpperCase() %></h1>
           </a>
           <button
             class="navbar-toggler mr-4"
@@ -76,7 +76,7 @@
           >
             <div class="about-article px-0 px-md-5 pl-lg-4 pl-xl-5">
               <h1 class="display-3">
-                Hi, I'm piouson.<br />
+                Hi, I'm Piouson.<br />
                 A Software Developer from Manchester UK.
               </h1>
               <p class="lead mt-4 mt-md-5">
@@ -136,7 +136,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/comment-microservice.png"
+                    src="<%= require('./assets/images/comment-microservice.png') %>"
                     alt="comment microservice"
                   />
                   <div class="card-body text-center">
@@ -156,7 +156,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/comment-microservice-demo.png"
+                    src="<%= require('./assets/images/comment-microservice-demo.png') %>"
                     alt="comment microservice demo"
                   />
                   <div class="card-body text-center">
@@ -176,7 +176,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/coding-quotes.png"
+                    src="<%= require('./assets/images/coding-quotes.png') %>"
                     alt="coding quotes"
                   />
                   <div class="card-body text-center">
@@ -196,7 +196,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/tech-doc-page.png"
+                    src="<%= require('./assets/images/tech-doc-page.png') %>"
                     alt="technical documentation page"
                   />
                   <div class="card-body text-center">
@@ -216,7 +216,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/tribute-page.png"
+                    src="<%= require('./assets/images/tribute-page.png') %>"
                     alt="tribute page"
                   />
                   <div class="card-body text-center">
@@ -236,7 +236,7 @@
                 >
                   <img
                     class="card-img-top border-top-rounded"
-                    src="./assets/images/rmm-resolve-comp.png"
+                    src="<%= require('./assets/images/rmm-resolve-comp.png') %>"
                     alt="resolve open rmm alerts"
                   />
                   <div class="card-body text-center">
@@ -301,7 +301,9 @@
           ></a>
         </div>
         <div class="copyright text-center text-md-right pr-2">
-          <p class="lead text-gray">&copy 2020 piouson</p>
+          <p class="lead text-gray">
+            &copy <%= copyrightYear %> <%= copyrightName.toLowerCase() %>
+          </p>
         </div>
       </div>
       <a
