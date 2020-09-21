@@ -24,4 +24,5 @@ jobs:
     - name: Install, Lint, Test and Build 🔧
       run: |
         npm ci
+        npm test
         npm run build --if-present

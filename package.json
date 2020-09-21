@@ -4,25 +4,34 @@
   "description": "My profile page containing some of my work.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --progress --mode=development --watch",
-    "build": "webpack --progress --mode=production",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --mode=production --open",
     "dev": "webpack-dev-server --mode=development --open",
-    "cypress:open": "cypress open"
+    "test": "start-server-and-test http-get://localhost:8080 cypress:run",
+    "test:record": "npm test --record --key 0df202ee-0564-471f-ba3a-5eeb53f7d9c7",
+    "watch": "webpack --progress --mode=development --watch",
+    "build": "webpack --progress --mode=production",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress": "start-server-and-test dev http-get://localhost:8080 cypress:open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/piouson/piouson.github.io.git"
   },
   "keywords": [
-    "profile",
-    "piouson",
-    "\"profile",
-    "page\""
+    "portfolio-page",
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "bootstrap",
+    "webpack",
+    "nodejs",
+    "ejs",
+    "cypress"
   ],
   "author": "piouson",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/piouson/piouson.github.io/issues"
   },
@@ -30,12 +39,13 @@
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
+    "@cypress/webpack-preprocessor": "^5.4.5",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.1",
-    "cypress": "^4.12.1",
+    "cypress": "^5.0.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",
@@ -44,6 +54,7 @@
     "prettier": "^2.1.1",
     "prettier-webpack-plugin": "^1.2.0",
     "sass-loader": "^9.0.3",
+    "start-server-and-test": "^1.11.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
