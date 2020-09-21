@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/piouson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://piouson.github.io
+  * I am piouson (https://keybase.io/piouson) on keybase.
+  * I have a public key ASAD9_MNmuDeKOtDmD8hToR0O7-m40a68kQm0I5FXp9K2go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012003f7f30d9ae0de28eb43983f214e84743bbfa6e346baf24426d08e455e9f4ada0a",
+      "host": "keybase.io",
+      "kid": "012003f7f30d9ae0de28eb43983f214e84743bbfa6e346baf24426d08e455e9f4ada0a",
+      "uid": "00a00be28a8b668b16aebc100df73e19",
+      "username": "piouson"
+    },
+    "merkle_root": {
+      "ctime": 1600673345,
+      "hash": "d3b25e78e54c322a8a63f4cfdcb6ba443ee7f40d0e25d6c10dad0d1b1a7af4ea6e6a1b84c7122ff5d85799deaccbbf30182bea62907bc3092c636fe8c9fe4f73",
+      "hash_meta": "c0d84ce58076cec84d096b0f351db9a4531b53a7b3146fd4598d85c3e10ce902",
+      "seqno": 17624727
+    },
+    "service": {
+      "entropy": "xCMin8PBOx9FxIIlY6zrbJP9",
+      "hostname": "piouson.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1600673366,
+  "expire_in": 504576000,
+  "prev": "fa22d2277d2fa54ec851071bc01fe890b3e0bcf92bea80a322ab129b757b93dc",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgA/fzDZrg3ijrQ5g/IU6EdDu/puNGuvJEJtCORV6fStoKp3BheWxvYWTESpcCCcQg+iLSJ30vpU7IUQcbwB/okLPgvPkr6oCjIqsSm3V7k9zEIBJSNPAF8tKcHhvA/4NPrvI3z370rDSZyKhvzfehzRgYAgHCo3NpZ8RAvAWbYRW4z0gp1sprKeQ15e68/dBjadAIlJhQquNAGYnqsotroHLrIZ2NHuygIl7j45d9j2jo7wBpx3kZYsh+DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFkGlxjAa/RhOlnBiqD0BBUzvtQNRry9+6lbLU8w/UCxo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/piouson
+
+==================================================================
