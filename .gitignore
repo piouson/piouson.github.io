@@ -3,5 +3,7 @@ node_modules
 dist
 build
 debug*
+cypress/integration/examples
+cypress/fixtures/*.json
 cypress/videos
 cypress/screenshots
