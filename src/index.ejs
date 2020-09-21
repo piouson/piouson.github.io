@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= pageTitle %></title>
   </head>
 
@@ -46,10 +46,10 @@
           class="github-corner-header d-none d-md-block"
           href="https://github.com/piouson/piouson.github.io"
           data-toggle="tooltip"
-          title="Fork me on GitHub"
+          aria-label="Fork me on GitHub"
           target="_blank"
         >
-          <svg width="80" height="80" viewbox="-30 30 250 250">
+          <svg width="80" height="80" viewbox="-30 30 250 250" focusable="true">
             <path d="M0 0h250v250"></path>
             <path
               class="octo-arm"
@@ -76,7 +76,7 @@
           >
             <div class="about-article px-0 px-md-5 pl-lg-0 pl-xl-5">
               <h1 class="display-3">
-                Hi, I'm Piouson.<br />
+                Hi, I'm Piouson.<br>
                 A Software Developer from Manchester UK.
               </h1>
               <p class="lead mt-4 mt-md-5">
@@ -93,6 +93,7 @@
                 id="github-link"
                 href="https://github.com/piouson"
                 target="_blank"
+                aria-label="github profile"
               >
                 <i class="py-lg-1 py-xl-0 fab fa-github"></i
               ></a>
@@ -101,6 +102,7 @@
                 id="codepen-link"
                 href="https://codepen.io/piouson/"
                 target="_blank"
+                aria-label="codepen profile"
               >
                 <i class="py-lg-1 py-xl-0 fab fa-codepen"></i
               ></a>
@@ -109,6 +111,7 @@
                 id="instagram-link"
                 href="https://www.instagram.com/piouson.code"
                 target="_blank"
+                aria-label="instagram profile"
               >
                 <i class="py-lg-1 py-xl-0 fab fa-instagram"></i
               ></a>
@@ -117,6 +120,7 @@
                 id="twitter-link"
                 href="https://twitter.com/piouson_code"
                 target="_blank"
+                aria-label="twitter profile"
               >
                 <i class="py-lg-1 py-xl-0 fab fa-twitter"></i
               ></a>
@@ -137,8 +141,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/comment-microservice.png') %>"
-                    alt="comment microservice"
-                  />
+                    alt="comment microservice homepage">
                   <div class="card-body text-center">
                     <h5>Comment Microservice</h5>
                   </div>
@@ -157,8 +160,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/comment-microservice-demo.png') %>"
-                    alt="comment microservice demo"
-                  />
+                    alt="comment microservice demo homepage">
                   <div class="card-body text-center">
                     <h5>Comment Microservice Demo</h5>
                   </div>
@@ -177,8 +179,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/coding-quotes.png') %>"
-                    alt="coding quotes"
-                  />
+                    alt="coding quotes homepage">
                   <div class="card-body text-center">
                     <h5>Coding Quotes</h5>
                   </div>
@@ -197,8 +198,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/tech-doc-page.png') %>"
-                    alt="technical documentation page"
-                  />
+                    alt="technical documentation page">
                   <div class="card-body text-center">
                     <h5>Documentation Page</h5>
                   </div>
@@ -217,8 +217,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/tribute-page.png') %>"
-                    alt="tribute page"
-                  />
+                    alt="tribute page">
                   <div class="card-body text-center">
                     <h5>Tribute Page</h5>
                   </div>
@@ -237,8 +236,7 @@
                   <img
                     class="card-img-top border-top-rounded"
                     src="<%= require('./assets/images/rmm-resolve-comp.png') %>"
-                    alt="resolve open rmm alerts"
-                  />
+                    alt="resolve open rmm alerts github page">
                   <div class="card-body text-center">
                     <h5>Resolve Open RMM Alerts</h5>
                   </div>
@@ -249,16 +247,12 @@
           <div class="d-flex justify-content-center my-5">
             <a
               href="https://github.com/piouson"
-              class="grow text-center"
               target="_blank"
+              class="btn btn-outline-dark btn-lg show-all grow text-center border-glow"
+              aria-label="github profile"
             >
-              <button
-                type="button"
-                class="btn btn-outline-dark btn-lg show-all border-glow"
-              >
-                <span class="lead">Show all </span>
-                <i class="fas fa-chevron-right"></i>
-              </button>
+              <span class="lead">Show all </span>
+              <i class="fas fa-chevron-right"></i>
             </a>
           </div>
         </section>
@@ -269,7 +263,7 @@
         <div class="icons-footer text-center text-md-right py-3">
           <a
             class="m-2"
-            id="github-link"
+            aria-label="github profile"
             href="https://github.com/piouson"
             target="_blank"
           >
@@ -277,7 +271,7 @@
           ></a>
           <a
             class="m-2"
-            id="codepen-link"
+            aria-label="codepen profile"
             href="https://codepen.io/piouson/"
             target="_blank"
           >
@@ -285,7 +279,7 @@
           ></a>
           <a
             class="m-2"
-            id="instagram-link"
+            aria-label="instagram profile"
             href="https://www.instagram.com/piouson.code"
             target="_blank"
           >
@@ -293,7 +287,7 @@
           ></a>
           <a
             class="m-2"
-            id="twitter-link"
+            aria-label="twitter profile"
             href="https://twitter.com/piouson_code"
             target="_blank"
           >
@@ -302,7 +296,7 @@
         </div>
         <div class="copyright text-center text-md-right pr-2">
           <p class="lead text-gray">
-            &copy <%= copyrightYear %> <%= copyrightName.toLowerCase() %>
+            &copy; <%= copyrightYear %> <%= copyrightName.toLowerCase() %>
           </p>
         </div>
       </div>
@@ -310,10 +304,10 @@
         class="github-corner-footer d-block d-md-none"
         href="https://github.com/piouson/piouson.github.io"
         data-toggle="tooltip"
-        title="Fork me on GitHub"
+        aria-label="Fork me on GitHub"
         target="_blank"
       >
-        <svg width="80" height="80" viewbox="0 0 250 250">
+        <svg width="80" height="80" viewbox="0 0 250 250" focusable="true">
           <path d="M0 0h250v250"></path>
           <path
             class="octo-arm"
