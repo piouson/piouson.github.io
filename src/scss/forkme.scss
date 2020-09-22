@@ -1,9 +1,9 @@
 @mixin forkme($placement) {
   svg {
-    position: absolute;
-    right: 0;
     color: $dark;
     fill: $white;
+    position: absolute;
+    right: 0;
 
     @if $placement == top {
       top: 0;
