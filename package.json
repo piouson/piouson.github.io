@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode=production --open",
-    "dev": "webpack-dev-server --mode=development --open",
-    "test": "start-server-and-test http-get://localhost:8080 cypress:run",
-    "test:record": "npm test --record --key 0df202ee-0564-471f-ba3a-5eeb53f7d9c7",
-    "watch": "webpack --progress --mode=development --watch",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --mode=development --open",
+    "test": "cross-env NODE_ENV=test start-server-and-test http-get://localhost:8080 cypress:run",
     "build": "webpack --progress --mode=production",
+    "build:dev": "webpack --progress --mode=development",
+    "lint:html": "html-validate src/index.ejs",
+    "lint:scss": "stylelint src/**/*.scss",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress": "start-server-and-test dev http-get://localhost:8080 cypress:open"
@@ -18,8 +19,12 @@
     "type": "git",
     "url": "git+https://github.com/piouson/piouson.github.io.git"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "keywords": [
-    "portfolio-page",
+    "portfolio",
     "html",
     "css",
     "javascript",
@@ -40,14 +45,19 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@cypress/webpack-preprocessor": "^5.4.5",
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.1",
     "cypress": "^5.0.0",
     "file-loader": "^6.0.0",
+    "fontmin-webpack": "^2.0.7",
+    "html-validate": "^3.3.0",
     "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^7.0.1",
     "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
@@ -56,12 +66,18 @@
     "sass-loader": "^9.0.3",
     "start-server-and-test": "^1.11.3",
     "style-loader": "^1.2.1",
+    "stylelint": "^13.7.1",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "svg-url-loader": "^6.0.0",
+    "terser-webpack-plugin": "^4.2.2",
+    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "cross-env": "^7.0.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }

@@ -1,4 +1,4 @@
-.svg-inline--fa {
+.svg-inline--fa:not(.fa-chevron-right) {
   color: $gray;
   transition: all 0.1s ease-in-out;
 
@@ -9,8 +9,8 @@
 }
 
 .icons-main {
-  width: auto;
   min-width: 18rem;
+  width: auto;
 
   @include media-breakpoint-down(lg) {
     min-width: auto;

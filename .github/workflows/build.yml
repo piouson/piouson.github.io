@@ -24,5 +24,7 @@ jobs:
     - name: Install, Lint, Test and Build 🔧
       run: |
         npm ci
+        npm run lint:html
+        npm run lint:scss
         npm test
         npm run build --if-present

@@ -1,15 +1,15 @@
-$borderRadius: 2rem;
+$border-radius: 2rem;
 
-#projects {
+.projects {
   padding-top: 10vh;
 }
 
 .border-top-rounded {
-  border-radius: $borderRadius $borderRadius 0 0;
+  border-radius: $border-radius $border-radius 0 0;
 }
 
 .border-rounded {
-  border-radius: $borderRadius;
+  border-radius: $border-radius;
 }
 
 .border-glow {
