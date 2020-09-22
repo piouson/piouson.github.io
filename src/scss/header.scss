@@ -1,27 +1,27 @@
-$navHeight: 10vh;
-$navHeightMin: 4rem;
-$fontSize: x-large;
+$nav-height: 10vh;
+$nav-height-min: 4rem;
+$font-size: x-large;
 $shadow: 0.25rem;
 
 header {
-  border-bottom: $lineWidth solid $darkGray;
+  border-bottom: $line-width solid $dark-gray;
 }
 
-#brand-name {
+.brand-name {
   font-family: "Saira Stencil One", cursive;
 }
 
 nav {
-  height: $navHeight;
-  min-height: $navHeightMin;
-  max-width: $appWidth;
   background-color: $dark;
+  height: $nav-height;
+  max-width: $app-width;
+  min-height: $nav-height-min;
 }
 
 .nav-link {
   color: $gray;
-  letter-spacing: $lineWidth;
-  font-size: $fontSize;
+  font-size: $font-size;
+  letter-spacing: $line-width;
 
   &:not(.active):hover {
     color: $white;
@@ -30,8 +30,8 @@ nav {
 
   &:first-child {
     @include media-breakpoint-down(sm) {
-      border-bottom: $lineWidth solid $darkGray;
-      border-top: $lineWidth solid $darkGray;
+      border-bottom: $line-width solid $dark-gray;
+      border-top: $line-width solid $dark-gray;
     }
   }
 }

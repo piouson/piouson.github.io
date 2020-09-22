@@ -1,27 +1,40 @@
-@import "fonts";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-
 $white: rgba(240, 240, 240, 1);
 $gray: rgba(240, 240, 240, 0.6);
-$darkGray: rgba(240, 240, 240, 0.1);
+$dark-gray: rgba(240, 240, 240, 0.1);
 $dark: rgba(24, 24, 35, 1);
-$appWidth: 90rem;
-$lineWidth: 0.05rem;
+$app-width: 90rem;
+$line-width: 0.05rem;
 
 $body-bg: $dark;
 $body-color: $white;
-$font-family-base: Sen, Roboto;
+$font-family-base: Sen;
 $enable-responsive-font-sizes: true;
 
 $theme-colors: (
   white: $white,
   gray: $gray,
-  gray-dark: $darkGray,
+  gray-dark: $dark-gray,
   dark: $dark,
 );
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/grid";
+
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/close";
+//@import "node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
 @import "forkme";
 @import "app";
 @import "header";

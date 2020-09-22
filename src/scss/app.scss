@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-#app,
-#footer {
-  max-width: $appWidth;
+.app,
+.footer {
+  max-width: $app-width;
 }
 
 section {
