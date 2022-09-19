@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/sen-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/sen-v7-latin-regular.woff") format("woff"),
+    url("../fonts/sen-v7-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/sen-v7-latin-700.woff2") format("woff2"),
+    url("../fonts/sen-v7-latin-700.woff") format("woff"),
+    url("../fonts/sen-v7-latin-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/sen-v7-latin-800.woff2") format("woff2"),
+    url("../fonts/sen-v7-latin-800.woff") format("woff"),
+    url("../fonts/sen-v7-latin-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Saira Stencil One";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/saira-stencil-one-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/saira-stencil-one-v14-latin-regular.woff") format("woff"),
+    url("../fonts/saira-stencil-one-v14-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik Burned";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/rubik-burned-v1-latin-regular.woff2") format("woff2"),
+    url("../fonts/rubik-burned-v1-latin-regular.woff") format("woff"),
+    url("../fonts/rubik-burned-v1-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bungee Shade";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/bungee-shade-v11-latin-regular.woff2") format("woff2"),
+    url("../fonts/bungee-shade-v11-latin-regular.woff") format("woff"),
+    url("../fonts/bungee-shade-v11-latin-regular.ttf") format("truetype");
+}

@@ -1,9 +1,0 @@
-node_modules
-.vscode
-dist
-build
-debug*
-cypress/integration/examples
-cypress/fixtures/*.json
-cypress/videos
-cypress/screenshots
